@@ -1,7 +1,7 @@
 battmux
 =======
 
-Bruce Wayne tmux widget, specially designed for batVim
+Bruce Wayne tmux widget, specially designed for [batVim](http://github.com/daneryl/batVim).
 
 ### Features
 * Opens a default session with three tabs: Vim, Tests and Git, with a special bash profile.
