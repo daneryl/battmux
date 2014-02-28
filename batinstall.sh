@@ -1,11 +1,11 @@
-ln -s $(pwd)/.tmux.conf ~/.tmux.conf
+read -p "this will overwrite your tmux config, proceed? Y/n" -r -n 1
+if [[ ! $REPLY =~ ^[nN]$ ]]
+then
+  rm ~/.tmux.conf
+  ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 
-#if [ ! -w ~/.viminfo ] 
-#then 
-#echo "\033[31myou need write permission for .viminfo file\n\033[0m"
-#fi
-#make -C ~/.bat_vim/bundle/vimproc.vim/
+  echo -e "\033[0;33m"
+  cat ./success.txt 
+  echo -e "\033[0m"
+fi
 
-#echo "\033[0;33m"
-#cat ./success.txt 
-#echo "\033[0m"
