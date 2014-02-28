@@ -20,5 +20,5 @@ Bruce Wayne tmux widget, specially designed for batVim
 * When in tmux, you can share your session with `share` and unshare it with `unshare`
 * Once shared, any user in your system can access your session with `tmux -S /tmp/pairing attach`
 
-We recommend creating an account for pairing with ssh access to your machine, and place the example `profile_for_pairing` profile file at the pairing account' home, renamed as `.profile`. This will automatically attach the pairing account' session to your tmux session if it is shared, and not allow logging if it's unshared or not exists. Also, it will close the ssh session in case you detach from tmux.
+We recommend creating an account for pairing with ssh access to your machine, and place the example `profile_for_pairing` profile file at the pairing account' home, renamed as `.profile`. This will automatically attach the pairing account' session to your tmux session if it is shared, not allowing login if tmux is unshared or does not exist. Also, it will close the ssh session in case you detach from tmux.
 
