@@ -26,3 +26,5 @@ alias unshare='chmod 770 /tmp/pairing'
 
 source ~/.profile
 
+export TERM="xterm-256color"
+
